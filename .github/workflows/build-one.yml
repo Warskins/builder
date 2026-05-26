@@ -12,6 +12,9 @@ on:
         description: 'OpenIPC/firmware ref (SHA/tag/branch) to clone — for cross-repo bisect of size/regression issues. Defaults to firmware HEAD.'
         required: false
 
+permissions:
+  contents: write
+
 jobs:
   resolve:
     name: Resolve commit
